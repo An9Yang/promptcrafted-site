@@ -18,11 +18,12 @@ function App() {
     );
 
     delayedScripts.forEach((script) => {
+      const scriptElement = script as HTMLScriptElement;
       const newScript = document.createElement('script');
 
       // External script (has data-src)
-      if (script.dataset.src) {
-        newScript.src = script.dataset.src;
+      if (scriptElement.dataset.src) {
+        newScript.src = scriptElement.dataset.src;
 
         // Copy other attributes (integrity, crossorigin, defer, etc.)
         Array.from(script.attributes).forEach((attr) => {
@@ -51,12 +52,13 @@ function App() {
     );
 
     delayedModules.forEach((script) => {
+      const scriptElement = script as HTMLScriptElement;
       const newScript = document.createElement('script');
       newScript.type = 'module'; // Restore original type
 
       // External module script (has data-src)
-      if (script.dataset.src) {
-        newScript.src = script.dataset.src;
+      if (scriptElement.dataset.src) {
+        newScript.src = scriptElement.dataset.src;
 
         // Copy other attributes (crossorigin, etc.)
         Array.from(script.attributes).forEach((attr) => {
