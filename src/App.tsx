@@ -103,27 +103,6 @@ function App() {
           <Component_7 />
         </section>
       </div>
-      <a
-        data-w-id="d8c11774-f340-3461-0f06-22d2b66a984e"
-        href="http://8am.design"
-        target="_blank"
-        className="button-primary-3 hero-home-1-label-1 new-button w-inline-block"
-        data-frz-id="7p7rfv5xsu5"
-      >
-        <img
-          loading="lazy"
-          src="https://cdn.prod.website-files.com/6822faf7b267d2a617501351/6879bc703dfea8254ffc66ac_Frame%206%20Tans.png"
-          className="fly-icon-image"
-          data-frz-id="cafa5cqej69"
-        />
-        <div className="button-primary-text-block" data-frz-id="x0234k76egb">
-          MORE TEMPLATE
-        </div>
-        <div
-          className="button-primary-circle _2nd"
-          data-frz-id="rbpm7vmm51r"
-        ></div>
-      </a>
     </>
   );
 }
