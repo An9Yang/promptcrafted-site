@@ -9,6 +9,12 @@ import Component_7 from './components/Component_7';
 
 function App() {
   useEffect(() => {
+    // Register GSAP ScrollTrigger plugin
+    if (typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined') {
+      window.gsap.registerPlugin(window.ScrollTrigger);
+      console.log('[React] GSAP ScrollTrigger registered');
+    }
+
     // Execute delayed scripts after React has rendered
     console.log('[React] DOM rendered, executing delayed scripts...');
 
